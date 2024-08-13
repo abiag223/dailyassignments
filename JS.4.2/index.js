@@ -6,10 +6,12 @@
 let currency = {
   usd: '$',
   euro: '€',
-  yen: '¥'
+  yen: '¥',
 };
 
-let myCurrency;
+let myCurrency =`I have ${currency.euro}200 which is ${currency.yen}23,718.09 and ${currency.usd}218.84`;
+
+
 
 
 // Problem 2
@@ -28,7 +30,11 @@ let companyIncome = {
   totalIncome: 4357346
 };
 
-let total;
+let total = companyIncome.january + companyIncome.february 
++ companyIncome.march;
+
+
+companyIncome.totalIncome = total;
 
 
 // Problem 3
@@ -50,11 +56,10 @@ let college = {
   graduationRatePercent: 70 
 };
 
-let students;
+let students = college.classOf21.students + college.classOf22.students;
 
 
-// Problem 4
-// Here we have a mathEquations object
+
 // in our 'first' variable use the pow4 function for the number 7
 // in our 'second' variable use the addThree function for 3213,3543 and 12365
 
@@ -70,9 +75,8 @@ let mathEquations = {
   }
 };
 
-let first;
-let second;
-
+let first= mathEquations.pow4(7);
+let second=mathEquations.addThree(3213, 3543, 12365);
 
 // Problem 5
 // Use our positiveExponent function and assign the value to the answer variable
@@ -92,4 +96,4 @@ let mathInfo = {
   }
 };
 
-let answer;
+let answer= mathInfo.equation.positiveExponent(5,3);
