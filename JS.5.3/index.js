@@ -6,6 +6,8 @@
 let myArray = [1, 11, 7, 3, 8, 2, 3, 2, 10, 3, 6, 2, 5];
 function filterMyArray() {
   //write code here
+  myArray = myArray.filter(num => num > 5 && num < 11);
+
 }
 
 // Problem 2
@@ -16,4 +18,7 @@ let multiplyArray = [1, 11, 7, 3, 8, 2, 3, 2, 10, 3, 6, 2, 5];
 
 function multiplyNumbers() {
   //write code here
+  multiplyArray.forEach(function(num, index) {
+    multiplyArray[index] = num * 5; 
+  });
 }
