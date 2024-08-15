@@ -32,8 +32,16 @@ let shoppingCart = [
 
 function totalPrice() {
   //write code here
-  
-  
+  let total = 0;
+  shoppingCart.forEach( item => {
+if (item.inStock) {
+  total += item.price;
+
+}
+
+
+  });
+  return total;
 }
 
 
@@ -88,7 +96,11 @@ const shopItems = [
 
 function inStockItems() {
   //write code here
+  let inStockArray = [];
+  shopItems.forEach((item)=> {
+    if(item.inStock) {
+      inStockArray.push (item.itemName); }});
   
   //return the array of in stock items
-  
-}
+  return inStockArray;
+    }
